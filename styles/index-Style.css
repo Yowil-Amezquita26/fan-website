@@ -1,15 +1,28 @@
-body, ul, li, h1, h2, a{
+body, main, ul, li, h1, h2, a{
     margin:0;
     padding: 0;
     font-family: Arial;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(133 90 201);
+    color: white;
+}
+
+header h1{
+    padding: 8px;
+    margin: 8px;
+    border: 8px double;
+    border-radius: 10px;
+}
+
 nav{
-    background-color: rgb(158, 83, 229);
+    background-color: rgba(145 145 145);
     color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     width: 100%;
     position: sticky;
     z-index: 1;
@@ -17,20 +30,14 @@ nav{
     left: 0;
 }
 
-nav h1{
-    padding: 8px;
-    border: 8px double;
-    border-radius: 10px;
-}
-
-
 nav ul li{
     display: inline-block;
     text-decoration: none;
+    padding: 8px;
 } 
 
 nav ul li a{
-    color: white;
+    color: rgb(13, 13, 13);
     text-decoration: none;
     padding: 0px 12px;
 }
@@ -39,8 +46,14 @@ img{
     width: 100vw;
 }
 
-main {
+main article {
     margin: 85px;
+}
+
+/*------------------------Pseudo classes----------------------*/
+
+nav ul li:hover{
+    background-color: rgb(77 173 91);
 }
 
 

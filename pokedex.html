@@ -5,16 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index-Style.css">
+    <link rel="stylesheet" href="/styles/pokedex.css">
+    <script src="pokedex.js"></script>
     <title>Search Pokemon</title>
 </head>
 <body>
-    <nav> 
+    <header>
         <h1> Pokemon</h1>    
+
+    </header>
+    <nav> 
         <ul>
             <li> <a href="/index.html"> Home Page</a></li>
             <li> <a href="/regions.html"> Regions</a></li>
-            <li> <a href="/game.html"> Game</a></li>
+            
         </ul>
     </nav>
+    
+    
+    <main>
+        <section>
+            <article>
+                <p>The name Pokémon is a syllabic abbreviation of the 
+                    Japanese brand Pocket Monsters. The term "Pokémon", 
+                    in addition to referring to the Pokémon franchise itself,
+                     also collectively refers to the many fictional species 
+                     that have made appearances in Pokémon media as of the 
+                     release of the eighth generation titles Pokémon Sword 
+                     and Shield. "Pokémon" is identical in the singular 
+                     and plural, as is each individual species name; 
+                     it is and would be grammatically correct to 
+                     say "one Pokémon" and "many Pokémon", as well 
+                     as "one Pikachu" and "many Pikachu".</p>
+            </article>
+            <form action="" onsubmit="getPokemonInfo()">
+                <label for="pokeId">Insert name or number</label>
+                <input id="pokeId" type="text" onsubmit="">
+            </form>
+        </section>
+        
+        <section id="pokemonDetails">
+            
+            <img id="pokemonImg" src="/assets/img/pokeball.jpeg" alt="Pokemon">
+            
+            <label for="pokemonName">Name:</label>
+            <h3 id="pokemonName" ></h3>
+            
+
+        </section>
+    </main>
 </body>
 </html>
