@@ -1,26 +1,28 @@
 
+.mainPokedex{
+    width: 100%;
+}
 
-main section form {
+.mainPokedex section form {
     text-align: center;
-    margin: 20px;
+    margin: 2rem;
 
 }
 
 #pokemonDetails{
-
-    text-align: center;
-    animation: slideIn 5s ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideIn 3.5s ;
     position: relative;
 
 }
 
 #pokemonImg{
-    width: 25vw;
+    width: 15rem;
     background-color: rgb(229, 219, 219);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+
 }
 
 /*------------------------animation----------------------*/

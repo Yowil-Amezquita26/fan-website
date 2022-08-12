@@ -1,4 +1,4 @@
-body, main, ul, li, h1, h2, a{
+*{
     margin:0;
     padding: 0;
     font-family: Arial;
@@ -18,11 +18,12 @@ header h1{
     border-radius: 10px;
 }
 
-nav{
+.navbar{
     background-color: rgba(145 145 145);
     color: white;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
     width: 100%;
     position: sticky;
     z-index: 1;
@@ -30,13 +31,26 @@ nav{
     left: 0;
 }
 
-nav ul li{
-    display: inline-block;
+.navbar input{
+    display: none;
+}
+
+.navbar label{
+    font-size: 40px;
+    
+}
+
+.navbar ul{
+    display: none;
+}
+
+.navbar ul li{
     text-decoration: none;
     padding: 8px;
+    list-style: none;
 } 
 
-nav ul li a{
+.navbar ul li a{
     color: rgb(13, 13, 13);
     text-decoration: none;
     padding: 0px 12px;
@@ -46,15 +60,20 @@ img{
     width: 100vw;
 }
 
-main article {
+.mainIndex article {
     margin: 85px;
 }
 
 /*------------------------Pseudo classes----------------------*/
 
-nav ul li:hover{
+.navbar ul li:hover{
     background-color: rgb(77 173 91);
 }
+
+.navbar input:checked ~ ul{
+    display: flex;
+    
+} 
 
 
 /* nav {
