@@ -16,15 +16,16 @@ const setRegionInfo = function ( region = ""){
     const infoRegion = document.getElementById("regionInfo")
     region = region.toLowerCase()
     console.log(regionObj[region], infoRegion, region )
-    document.getElementById("regionName").innerHTML = storage.getItem("regionSelected")
-    infoRegion.innerHTML = regionObj[region]
+    if(regionObj[region] != undefined){
+        document.getElementById("regionName").innerHTML = storage.getItem("regionSelected")
+        infoRegion.innerHTML = regionObj[region]
+    }
 }
 
 function getRegion(){
     let regionSelected = document.getElementById("regionList").value
     storage.setItem("regionSelected",regionSelected)
 }
-let test ="galar"
 
 
 window.onload = setRegionInfo(storage.getItem("regionSelected"))

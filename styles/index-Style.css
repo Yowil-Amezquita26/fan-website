@@ -4,10 +4,16 @@
     font-family: Arial;
 }
 
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 header{
     display: flex;
     justify-content: center;
-    background-color: rgb(133 90 201);
+    background-color: #30A7D7;
     color: white;
 }
 
@@ -55,18 +61,31 @@ header h1{
     padding: 0px 12px;
 }
 
-img{
+.banner img{
     width: 100vw;
+    
+    
 }
 
 .mainIndex article {
-    margin: 85px;
+    margin: auto 0;
+}
+
+.homeFooter{
+    width: 100vw;
+    text-align: center;
+    background-color: #30A7D7;
+}
+
+.footerContent{
+    margin-top: auto;
+    padding: 10px;
 }
 
 /*------------------------Pseudo classes----------------------*/
 
 .navbar ul li:hover{
-    background-color: rgb(77 173 91);
+    background-color: #4DAD5B;
 }
 
 .navbar input:checked ~ ul{

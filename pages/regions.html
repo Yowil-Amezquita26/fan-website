@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index-Style.css">
     <link rel="stylesheet" href="/styles/regionStyle.css">
-    <script src="/javaScript/region.js"></script>
+    <script src="/javaScript/region.js" defer></script>
     <title>Pokemon Regions</title>
 </head>
 <body>
@@ -21,9 +21,9 @@
         <input type="checkbox" id="menu">
         <label for="menu">☰</label>
         <ul>
-            <li> <a href="/index.html"> Home Page</a></li>
+            <li> <a href="/pages/index.html"> Home Page</a></li>
             <hr>
-            <li> <a href="/pokedex.html"> Pokedex</a></li>
+            <li> <a href="/pages/pokedex.html"> Pokedex</a></li>
         </ul>
     </nav>
     <main class="mainRegion">
@@ -52,7 +52,8 @@
         </article>
         <article>
             <form action="" onsubmit="getRegion()">
-                <input list="regions" name="" id="regionList">
+                <label for="regionList">Select or insert region</label>
+                <input type="text" list="regions" name="" id="regionList">
                 <datalist id="regions">
                     <option value="Kanto">
                     <option value="Johto">
@@ -65,9 +66,12 @@
                 </datalist>
             </form>
             <h2 id="regionName"></h2>
-            <p id="regionInfo">asdasdasdasd</p>
+            <p id="regionInfo"></p>
         </article>
         
     </main>
+    <footer class="homeFooter">
+        <p class="footerContent">Made in 2022</p>
+    </footer>
 </body>
 </html>
