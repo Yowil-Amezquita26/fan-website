@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index-Style.css">
-    <link rel="stylesheet" href="/styles/pokedexStyle.css">
-    <script src="/javaScript/pokedex.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index-Style.css" />
+    <link rel="stylesheet" href="/styles/pokedexStyle.css" />
+    <script
+      type="module"
+      src="/javaScript/pokedex-JavaSctipt/getPokemonInfo.js"
+    ></script>
     <title>Search Pokemon</title>
-</head>
-<body>
-    <header>
-        <h1> Pokemon</h1>    
+  </head>
 
+  <body>
+    <header>
+      <h1>Pokemon</h1>
     </header>
 
-    <nav class="navbar"> 
-        <input type="checkbox" id="menu">
-        <label for="menu">☰</label>
-        <ul>
-            <li> <a href="/pages/index.html"> Home Page</a></li>
-            <hr>
-            <li> <a href="/pages/regions.html"> Regions</a></li>    
-        </ul>
+    <nav class="navbar">
+      <input type="checkbox" id="menu" />
+      <label for="menu">☰</label>
+      <ul>
+        <li><a href="/pages/index.html"> Home Page</a></li>
+        <hr />
+        <li><a href="/pages/regions.html"> Regions</a></li>
+      </ul>
     </nav>
-    
-    
-    <main class="mainPokedex">
-        <section>
-            <form action="" onsubmit="getPokemonInfo()">
-                <label for="pokeId">Insert name or number</label>
-                <input id="pokeId" type="text" >
-            </form>
-        </section>
-        
-        <section id="pokemonDetails">
-            
-            <img id="pokemonImg" src="/assets/img/pokeball.jpeg" alt="No pokemon image found">
-            
-            <label for="pokemonName">Name:</label>
-            <h3 id="pokemonName" ></h3>
-            
 
-        </section>
+    <main class="mainPokedex">
+      <section>
+        <form action="" onsubmit="getPokemonInfo()">
+          <label for="pokeId">Insert name or number</label>
+          <input id="pokeId" type="text" />
+        </form>
+      </section>
+
+      <section id="pokemonDetails">
+        <img
+          id="pokemonImg"
+          src="/assets/img/pokeball.jpeg"
+          alt="No pokemon image found"
+        />
+
+        <label for="pokemonName">Name:</label>
+        <h3 id="pokemonName"></h3>
+      </section>
     </main>
     <footer class="homeFooter">
-        <p class="footerContent">Made in 2022</p>
+      <p class="footerContent">Made in 2022</p>
     </footer>
-</body>
+  </body>
 </html>

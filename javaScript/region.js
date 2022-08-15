@@ -1,4 +1,5 @@
 
+
 const storage = window.localStorage
 const regionObj = {
     kanto:"Kanto, named after the real-world region of Japan by the same name, features a variety of cities surrounded by mountains and plains, and even features a volcano on Cinnabar Island. Every town in the Pokémon Kanto region is named in reference to a color, like Viridian City, Lavender Town, and others. Players begin their journey in the quiet Pallet Town (a reference to the blank canvas of a painting) and the starter Pokémon offered to players in a basic Poké Ball are Squirtle, Charmander, and Bulbasaur.",

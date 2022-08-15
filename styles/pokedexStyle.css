@@ -1,34 +1,34 @@
-
-.mainPokedex{
-    width: 100%;
-    min-height: 100vh;
+.mainPokedex {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .mainPokedex section form {
-    text-align: center;
-    margin: 2rem;
-
+  text-align: center;
+  margin: 2rem;
 }
 
-#pokemonDetails{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: slideIn 3.5s ;
-    position: relative;
-
+#pokemonDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slideIn 3.5s;
+  position: relative;
 }
 
-#pokemonImg{
-    width: 15rem;
-    background-color: rgb(229, 219, 219);
-    display: block;
-
+#pokemonImg {
+  width: 15rem;
+  background-color: rgb(229, 219, 219);
+  display: block;
 }
 
 /*------------------------animation----------------------*/
 
 @keyframes slideIn {
-    from { left: 200px;}
-    to { left: 0px;}
+  from {
+    left: 200px;
+  }
+  to {
+    left: 0px;
+  }
 }
