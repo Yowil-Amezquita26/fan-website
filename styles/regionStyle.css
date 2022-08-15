@@ -27,8 +27,20 @@
     display: flex;
     align-items: center;
 }
+
+.regionList  input{
+    display: none;
+}
 .regionList li img{
     width: 2rem; 
     /* width: 30px; */
 
 }
+
+/*------------------------Pseudo classes----------------------*/
+
+.regionList #kantoShow:checked ~ .kantoInfo{
+
+    display: none;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index-Style.css">
     <link rel="stylesheet" href="/styles/regionStyle.css">
+    <script src="/javaScript/region.js"></script>
     <title>Pokemon Regions</title>
 </head>
 <body>
@@ -29,8 +30,7 @@
         <article>
             <h2>Regions</h2>
             
-            <p>
-                As the Pokémon franchise continues to expand, fans are introduced to 
+            <p>As the Pokémon franchise continues to expand, fans are introduced to 
                 increasing numbers of the beloved pocket monsters across the world with 
                 every new game. 
             </p>    
@@ -51,26 +51,23 @@
 
         </article>
         <article>
-            <ul class="regionList">
-                <li>
-                    <strong>Kanto</strong>
-                    <img src="./assets/icoons/arrowDown.svg" alt="down">
-                    <img src="./assets/icoons/arrowUp.svg" alt="up">
-                    <p>Kanto, named after the real-world region of Japan by the same name, features a variety of cities surrounded by mountains and plains, and even features a volcano on Cinnabar Island. Every town in the Pokémon Kanto region is named in reference to a color, like Viridian City, Lavender Town, and others. Players begin their journey in the quiet Pallet Town (a reference to the blank canvas of a painting) and the starter Pokémon offered to players in a basic Poké Ball are Squirtle, Charmander, and Bulbasaur.</p>
-                </li>
-                <li>
-                    <strong>Johto</strong>
-                    <p>Much of the overall aesthetic and inspiration for the Johto region comes from traditional Japanese architecture and culture, and the fictional area is inspired by the Kansai region of Japan, which includes Osaka, Kyoto, and Nara. The Kansai region has rich soils, which inspired the berry crop mechanic introduced in this generation of games.</p>
-                </li>
-                <li><strong>Hoenn</strong></li>
-                <li><strong>Sinno</strong></li>
-                <li><strong>Unova</strong></li>
-                <li><strong>Kalos</strong></li>
-                <li><strong>Alola</strong></li>
-                <li><strong>Galar</strong></li>
-                <li><strong>Hisui</strong></li>
-            </ul>
+            <form action="" onsubmit="getRegion()">
+                <input list="regions" name="" id="regionList">
+                <datalist id="regions">
+                    <option value="Kanto">
+                    <option value="Johto">
+                    <option value="Hoenn">
+                    <option value="Sinnoh">
+                    <option value="Unova">
+                    <option value="Kalos">
+                    <option value="Alola">
+                    <option value="Galar">
+                </datalist>
+            </form>
+            <h2 id="regionName"></h2>
+            <p id="regionInfo">asdasdasdasd</p>
         </article>
+        
     </main>
 </body>
 </html>
