@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index-Style.css">
-    <link rel="stylesheet" href="/styles/regionStyle.css">
-    <script src="/javaScript/region.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index-Style.css" />
+    <link rel="stylesheet" href="/styles/regionStyle.css" />
+    <script
+      type="module"
+      src="/javaScript/region-modules/getRegion.js"
+      defer
+    ></script>
     <title>Pokemon Regions</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-
-        <h1> Pokemon</h1>    
-        
+      <h1>Pokemon</h1>
     </header>
 
     <nav class="navbar">
-        <input type="checkbox" id="menu">
-        <label for="menu">☰</label>
-        <ul>
-            <li> <a href="/pages/index.html"> Home Page</a></li>
-            <hr>
-            <li> <a href="/pages/pokedex.html"> Pokedex</a></li>
-        </ul>
+      <input type="checkbox" id="menu" />
+      <label for="menu" class="openMenu">☰</label>
+      <label for="menu" class="closeMenu">x</label>
+      <ul class="listLink">
+        <li class="navbarLink"><a href="/pages/index.html"> Home Page</a></li>
+        <hr />
+        <li class="navbarLink"><a href="/pages/pokedex.html"> Pokedex</a></li>
+      </ul>
     </nav>
-    <main class="mainRegion">
-        <article>
-            <h2>Regions</h2>
-            
-            <p>As the Pokémon franchise continues to expand, fans are introduced to 
-                increasing numbers of the beloved pocket monsters across the world with 
-                every new game. 
-            </p>    
-            <p>Collectible With countless species across and over a dozen types to log 
-                in your Pokédex, it’s no surprise that different biomes and regions of 
-                the Pokémon world are better suited environments 
-                for the new creatures you might encounter on your journey. From tropical islands 
-                to frozen northern tundras, each Pokémon region has its own Pokémon 
-                League, its own gym structure, and most importantly, its own unique 
-                Pokémon ecosystem.
-            </p>
-            <p>
-                Many of these eight main settings are inspired by 
-                real-world locations too! Are you ready to begin your adventure to catch ’em all? 
-                Then let’s dive in to the breakdown of the eight regions of Pokémon in the order 
-                they were unveiled to fans.
-            </p>
+    <main class="mainContent">
+      <section class="regionInformation">
+        <h2>Regions</h2>
 
-        </article>
-        <article>
-            <form action="" onsubmit="getRegion()">
-                <label for="regionList">Select or insert region</label>
-                <input type="text" list="regions" name="" id="regionList">
-                <datalist id="regions">
-                    <option value="Kanto">
-                    <option value="Johto">
-                    <option value="Hoenn">
-                    <option value="Sinnoh">
-                    <option value="Unova">
-                    <option value="Kalos">
-                    <option value="Alola">
-                    <option value="Galar">
-                </datalist>
-            </form>
-            <h2 id="regionName"></h2>
-            <p id="regionInfo"></p>
-        </article>
-        
+        <p>
+          As the Pokémon franchise continues to expand, fans are introduced to
+          increasing numbers of the beloved pocket monsters across the world
+          with every new game.
+        </p>
+        <p>
+          Collectible With countless species across and over a dozen types to
+          log in your Pokédex, it’s no surprise that different biomes and
+          regions of the Pokémon world are better suited environments for the
+          new creatures you might encounter on your journey. From tropical
+          islands to frozen northern tundras, each Pokémon region has its own
+          Pokémon League, its own gym structure, and most importantly, its own
+          unique Pokémon ecosystem.
+        </p>
+        <p>
+          Many of these eight main settings are inspired by real-world locations
+          too! Are you ready to begin your adventure to catch ’em all? Then
+          let’s dive in to the breakdown of the eight regions of Pokémon in the
+          order they were unveiled to fans.
+        </p>
+      </section>
+      <section class="regionSection">
+        <form action="" onsubmit="getRegion()" id="formRegion">
+          <label for="regionList">Select or insert region</label>
+          <input type="text" list="regions" name="" id="regionList" />
+          <datalist id="regions">
+            <option value="Kanto"></option>
+            <option value="Johto"></option>
+            <option value="Hoenn"></option>
+            <option value="Sinnoh"></option>
+            <option value="Unova"></option>
+            <option value="Kalos"></option>
+            <option value="Alola"></option>
+            <option value="Galar"></option>
+          </datalist>
+        </form>
+        <h2 id="regionName"></h2>
+        <p id="regionDetail"></p>
+      </section>
     </main>
     <footer class="homeFooter">
-        <p class="footerContent">Made in 2022</p>
+      <p class="footerContent">Made in 2022</p>
     </footer>
-</body>
+  </body>
 </html>

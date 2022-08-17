@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="/styles/index-Style.css" />
     <link rel="stylesheet" href="/styles/pokedexStyle.css" />
     <script
+      src="/javaScript/pokedex-modules/getPokemonInfo.js"
       type="module"
-      src="/javaScript/pokedex-JavaSctipt/getPokemonInfo.js"
+      defer
     ></script>
     <title>Search Pokemon</title>
   </head>
 
   <body>
     <header>
-      <h1>Pokemon</h1>
+      <h1 class="headerTitle">Pokemon</h1>
     </header>
 
     <nav class="navbar">
       <input type="checkbox" id="menu" />
-      <label for="menu">☰</label>
-      <ul>
-        <li><a href="/pages/index.html"> Home Page</a></li>
+      <label for="menu" class="openMenu">☰</label>
+      <label for="menu" class="closeMenu">x</label>
+      <ul class="listLink">
+        <li class="navbarLink"><a href="/pages/index.html"> Home Page</a></li>
         <hr />
-        <li><a href="/pages/regions.html"> Regions</a></li>
+        <li class="navbarLink"><a href="/pages/regions.html"> Regions</a></li>
       </ul>
     </nav>
 
-    <main class="mainPokedex">
+    <main class="mainContent">
       <section>
-        <form action="" onsubmit="getPokemonInfo()">
+        <form action="" id="formPokemon">
           <label for="pokeId">Insert name or number</label>
           <input id="pokeId" type="text" />
         </form>

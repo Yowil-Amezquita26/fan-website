@@ -1,9 +1,5 @@
-.mainPokedex {
-  width: 100%;
-  min-height: 100vh;
-}
 
-.mainPokedex section form {
+#formPokemon {
   text-align: center;
   margin: 2rem;
 }

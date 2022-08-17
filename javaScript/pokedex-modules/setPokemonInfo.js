@@ -4,7 +4,7 @@ let pokemon = {};
  * get image api
  * function that sets the image of the pokemon and saves the data of that pokemon
  * */
-const setPokemonInfo = async function (search = "") {
+async function setPokemonInfo(search = "") {
   try {
     const respuesta = await fetch(
       `https://pokeapi.co/api/v2/pokemon/${search}`
@@ -18,6 +18,6 @@ const setPokemonInfo = async function (search = "") {
     console.log(error);
     document.getElementById("pokemonName").innerHTML = "No Pokemon found";
   }
-};
+}
 
 export default setPokemonInfo;
