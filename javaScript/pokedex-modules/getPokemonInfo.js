@@ -17,4 +17,4 @@ function getPokemonInfo() {
 }
 
 pokemonForm.addEventListener("submit", getPokemonInfo);
-window.onload = setPokemonInfo(storage.getItem("pokeId"));
+window.onload = setPokemonNoAsync(storage.getItem("pokeId"));

@@ -21,9 +21,11 @@ const regionObj = {
     "The eighth region in the Pokémon series, Galar is one of the first to have more of its landmass added after the core title of the game, featured in the Crown Tundra and Isle of Armor expansions. Notably inspired by Great Britain (as if viewed upside-down), Galar incorporates cultural references from England, Wales, and Scotland into its topography and cities.",
 };
 
-function getRegion() {
-  let regionSelected = document.getElementById("regionList").value;
-  storage.setItem("regionSelected", regionSelected);
-}
+const getRegion = () => {
+  storage.setItem(
+    "regionSelected",
+    document.getElementById("regionList").value
+  );
+};
 formRegion.addEventListener("submit", getRegion);
 window.onload = setRegionInfo(storage.getItem("regionSelected"), regionObj);

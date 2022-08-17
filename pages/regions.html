@@ -54,9 +54,9 @@
         </p>
       </section>
       <section class="regionSection">
-        <form action="" onsubmit="getRegion()" id="formRegion">
+        <form action=""  id="formRegion">
           <label for="regionList">Select or insert region</label>
-          <input type="text" list="regions" name="" id="regionList" />
+          <input type="text" list="regions" name="" id="regionList" required/>
           <datalist id="regions">
             <option value="Kanto"></option>
             <option value="Johto"></option>
@@ -67,6 +67,7 @@
             <option value="Alola"></option>
             <option value="Galar"></option>
           </datalist>
+          <button class="searchButton">Search</button>
         </form>
         <h2 id="regionName"></h2>
         <p id="regionDetail"></p>
