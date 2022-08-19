@@ -21,6 +21,7 @@ header {
   margin: 8px;
   border: 8px double;
   border-radius: 10px;
+  font-size: 2rem;
 }
 
 .navbar {
@@ -42,10 +43,14 @@ header {
 
 .openMenu {
   font-size: 2.5rem;
+  margin-right: 1.2rem;
+  margin-left: 0.5rem;
 }
 .closeMenu {
   font-size: 2.9rem;
   display: none;
+  margin-right: 1.2rem;
+  margin-left: 0.5rem;
 }
 
 .listLink {
@@ -70,10 +75,16 @@ header {
   width: 100%;
   min-height: 100vh;
 }
-/* .mainIndex article {
-  margin: auto 0;
-} */
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
 
+.description{
+  margin-top: 2rem;
+}
 .homeFooter {
   width: 100vw;
   text-align: center;
@@ -100,4 +111,7 @@ header {
 }
 .navbar input:checked ~ .closeMenu {
   display: flex;
+}
+
+@media screen and (max-width: 850px) {
 }

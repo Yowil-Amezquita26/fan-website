@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <h1>Pokemon</h1>
+      <h1 class="headerTitle">Pokemon</h1>
     </header>
 
     <nav class="navbar">
@@ -30,7 +30,7 @@
     </nav>
     <main class="mainContent">
       <section class="regionInformation">
-        <h2>Regions</h2>
+        <h1>Regions</h1>
 
         <p>
           As the Pokémon franchise continues to expand, fans are introduced to
@@ -54,9 +54,9 @@
         </p>
       </section>
       <section class="regionSection">
-        <form action=""  id="formRegion">
+        <form action=""  id="formRegion" class="formRegion">
           <label for="regionList">Select or insert region</label>
-          <input type="text" list="regions" name="" id="regionList" required/>
+          <input type="text" class="regionInput" list="regions" id="regionList" required/>
           <datalist id="regions">
             <option value="Kanto"></option>
             <option value="Johto"></option>
@@ -67,7 +67,7 @@
             <option value="Alola"></option>
             <option value="Galar"></option>
           </datalist>
-          <button class="searchButton">Search</button>
+          <button class="searchRegion"></button>
         </form>
         <h2 id="regionName"></h2>
         <p id="regionDetail"></p>

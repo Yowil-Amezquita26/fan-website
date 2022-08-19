@@ -6,6 +6,25 @@
   align-items: center;
   margin: 40px auto;
 }
+.formRegion{
+  display: flex;
+  align-items: center;
+}
+.regionInput{
+  margin: 15px;
+}
+
+.searchRegion{
+  width: 3rem;
+  height: 2.5rem;
+  margin-left: 15px;
+  background-color: #30A7D7;
+  background-image: url("/assets/img/search_FILL0_wght400_GRAD0_opsz48.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border-radius: 10%;
+}
 
 .regionSection {
   width: 90%;
@@ -17,4 +36,12 @@
 }
 #regionName {
   margin: 2rem;
+}
+
+
+@media screen and (max-width: 459px){
+  .formRegion{
+    flex-direction: column;
+  }
+  
 }

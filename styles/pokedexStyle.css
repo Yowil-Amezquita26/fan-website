@@ -1,6 +1,23 @@
 #formPokemon {
   text-align: center;
   margin: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.pokemonInput{
+  margin: 15px;
+}
+.searchPokemon{
+  width: 3rem;
+  height: 2.5rem;
+  margin: 15px;
+  background-color: #30A7D7;
+  background-image: url("/assets/img/search_FILL0_wght400_GRAD0_opsz48.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border-radius: 10%;
 }
 
 #pokemonDetails {
@@ -25,5 +42,13 @@
   }
   to {
     left: 0px;
+  }
+}
+
+
+@media screen and (max-width: 495px){
+
+  #formPokemon{
+    flex-direction: column;
   }
 }
