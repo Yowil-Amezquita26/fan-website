@@ -13,7 +13,7 @@
   height: 2.5rem;
   margin: 15px;
   background-color: #30A7D7;
-  background-image: url("/assets/img/search_FILL0_wght400_GRAD0_opsz48.svg");
+  background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.5rem;
@@ -28,6 +28,24 @@
   position: relative;
 }
 
+#typeList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  
+}
+.typePokemon{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem ;
+  background-color: #DFDFDF;
+}
+.typeImage{
+  width: 2rem;
+}
 #pokemonImg {
   width: 15rem;
   background-color: rgb(229, 219, 219);

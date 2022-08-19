@@ -1,3 +1,5 @@
+import setGamesByRegion from "./setGamesByRegion.js";
+
 const storage = window.localStorage;
 const setRegionInfo = function (region = "", list) {
   region = region.toLowerCase();
@@ -6,6 +8,7 @@ const setRegionInfo = function (region = "", list) {
       storage.getItem("regionSelected");
     document.getElementById("regionDetail").innerHTML = list[region];
   }
+  setGamesByRegion(region);
 };
 
 export default setRegionInfo;
