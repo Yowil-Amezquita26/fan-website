@@ -5,14 +5,15 @@
   display: flex;
   justify-content: center;
 }
-.pokemonInput{
+.pokemonInput {
+  font-size: 1.2rem;
   margin: 15px;
 }
-.searchPokemon{
+.searchPokemon {
   width: 3rem;
   height: 2.5rem;
   margin: 15px;
-  background-color: #30A7D7;
+  background-color: #30a7d7;
   background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@
   border-radius: 10%;
 }
 
-#pokemonDetails {
+.pokemonDetails {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,24 +33,24 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  
 }
-.typePokemon{
+.typePokemon {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
   margin: 0.5rem;
   padding: 1rem;
-  border-radius: 2rem ;
-  background-color: #DFDFDF;
+  border-radius: 2rem;
+  border: 1px solid;
+  background-color: #dfdfdf;
 }
-.typeImage{
+.typeImage {
   width: 2rem;
 }
 #pokemonImg {
   width: 15rem;
   background-color: rgb(229, 219, 219);
   display: block;
+  border-radius: 1rem;
 }
 
 /*------------------------animation----------------------*/
@@ -63,10 +64,10 @@
   }
 }
 
+/*------------------------responsive----------------------*/
 
-@media screen and (max-width: 495px){
-
-  #formPokemon{
+@media screen and (max-width: 600px) {
+  #formPokemon {
     flex-direction: column;
   }
 }

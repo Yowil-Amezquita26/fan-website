@@ -74,16 +74,17 @@ header {
 .mainContent {
   width: 100%;
   min-height: 100vh;
+  font-size: 1.2rem;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem;
 }
 
-.description{
-  margin-top: 2rem;
+.description {
+  margin: 2rem;
 }
 .homeFooter {
   width: 100vw;
@@ -97,6 +98,7 @@ header {
 }
 
 /*------------------------Pseudo classes----------------------*/
+
 
 .navbar ul li:hover {
   background-color: #4dad5b;
@@ -112,6 +114,7 @@ header {
 .navbar input:checked ~ .closeMenu {
   display: flex;
 }
+
 
 @media screen and (max-width: 850px) {
 }

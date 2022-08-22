@@ -32,14 +32,14 @@
 
     <main class="mainContent">
       <section>
-        <form action="" id="formPokemon">
+        <form action="" id="formPokemon" >
           <label for="pokeId">Insert name or number</label>
-          <input class="pokemonInput" id="pokeId" type="text" required />
+          <input class="pokemonInput" id="pokeId" type="text" required re/>
           <button class="searchPokemon"></button>
         </form>
       </section>
 
-      <section id="pokemonDetails">
+      <section class="pokemonDetails">
         <img
           id="pokemonImg"
           src="/assets/img/pokeball.jpeg"
@@ -48,6 +48,7 @@
 
         <label for="pokemonName">Name:</label>
         <h3 id="pokemonName"></h3>
+        <label for="typeList">Type:</label>
         <ul id="typeList"></ul>
       </section>
     </main>

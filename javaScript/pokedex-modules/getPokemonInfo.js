@@ -9,11 +9,10 @@ const pokemonForm = document.querySelector("#formPokemon");
  * gets the information from the input and saves it in the local storage
  */
 function getPokemonInfo() {
-  
   pokeId = document.getElementById("pokeId").value.toLowerCase();
   console.log(parseInt(pokeId));
-  if(parseInt(pokeId)> 898 ){
-    pokeId=""
+  if (parseInt(pokeId) > 898) {
+    pokeId = "";
   }
   storage.setItem("pokeId", pokeId);
   console.log("hoola");

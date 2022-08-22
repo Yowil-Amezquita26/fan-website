@@ -6,19 +6,20 @@
   align-items: center;
   margin: 40px auto;
 }
-.formRegion{
+.formRegion {
   display: flex;
   align-items: center;
 }
-.regionInput{
+.regionInput {
+  font-size: 1.2rem;
   margin: 15px;
 }
 
-.searchRegion{
+.searchRegion {
   width: 3rem;
   height: 2.5rem;
   margin-left: 15px;
-  background-color: #30A7D7;
+  background-color: #30a7d7;
   background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -38,10 +39,23 @@
   margin: 2rem;
 }
 
+#gameRegion {
+  margin: 2rem;
+  list-style: none;
+}
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid;
+  background-color: #dfdfdf;
+}
 
-@media screen and (max-width: 459px){
-  .formRegion{
+@media screen and (max-width: 600px) {
+  .formRegion {
     flex-direction: column;
   }
-  
 }
