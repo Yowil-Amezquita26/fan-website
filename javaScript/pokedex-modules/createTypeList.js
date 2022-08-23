@@ -1,4 +1,4 @@
-import typeColors from "../../typeColors.json" assert { type: "json" };
+import typeColors from "../../helpers/typeColors.json" assert { type: "json" };
 const typelist = document.getElementById("typeList");
 
 function createTypeList(list) {

@@ -37,20 +37,17 @@ header {
   left: 0;
 }
 
-.navbar input {
-  display: none;
+.open-close {
+  visibility: hidden;
+  position: absolute;
 }
 
-.openMenu {
-  font-size: 2.5rem;
-  margin-right: 1.2rem;
-  margin-left: 0.5rem;
-}
-.closeMenu {
-  font-size: 2.9rem;
-  display: none;
-  margin-right: 1.2rem;
-  margin-left: 0.5rem;
+.toggle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .listLink {
@@ -99,7 +96,6 @@ header {
 
 /*------------------------Pseudo classes----------------------*/
 
-
 .navbar ul li:hover {
   background-color: #4dad5b;
 }
@@ -108,13 +104,45 @@ header {
   display: flex;
 }
 
-.navbar input:checked ~ .openMenu {
-  display: none;
-}
-.navbar input:checked ~ .closeMenu {
-  display: flex;
+.toggle::before,
+.toggle::after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: calc(100% / 2);
+  box-sizing: border-box;
+  left: calc(100% / 4);
+  transition: all 0.2s ease-out;
 }
 
+.toggle::before {
+  top: calc(100% / 4);
+  height: calc(100% / 4);
+  border-top: 3.5px solid white;
+  border-bottom: 3.5px solid white;
+  background-color: transparent;
+}
+
+.toggle::after {
+  height: 3.5px;
+  background-color: white;
+  bottom: calc(100% / 4);
+}
+
+.open-close:checked + .toggle::before,
+.open-close:checked + .toggle::after {
+  top: calc(100% / 2);
+  height: 1px;
+  border-bottom: 0;
+}
+
+.open-close:checked + .toggle::before {
+  transform: rotate(45deg);
+}
+
+.open-close:checked + .toggle::after {
+  transform: rotate(-45deg);
+}
 
 @media screen and (max-width: 850px) {
 }
