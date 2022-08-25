@@ -9,6 +9,10 @@
   font-size: 1.2rem;
   margin: 15px;
 }
+
+.pokeIdLabel{
+  margin: 2px;
+}
 .searchPokemon {
   width: 3rem;
   height: 2.5rem;
