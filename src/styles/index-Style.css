@@ -48,13 +48,34 @@ header {
   background-color: #DFDFDF;
   width: 25rem;
 }
-.homeImg:hover{
-  transform: rotateY(180deg) ;
+
+.imageContainer{
+  position: relative;
 }
+
+.imageContainer:hover .overlay {
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5EBDFC;
+  overflow: hidden;
+  width: 25rem;
+  height: 0;
+  transition: .5s ease;
+}
+
 .homeFooter {
   width: 100vw;
   text-align: center;
-  background-color: #30a7d7;
+  background-color:  #30a7d7;
 }
 
 .footerContent {

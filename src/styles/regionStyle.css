@@ -42,6 +42,11 @@
 #gameRegion {
   margin: 2rem;
   list-style: none;
+  ;
+}
+#gameRegion.exist {
+  margin: 2rem;
+  list-style: none;
 }
 .game {
   display: flex;
