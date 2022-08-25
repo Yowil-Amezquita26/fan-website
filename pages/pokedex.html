@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/index-Style.css" />
+    <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/pokedexStyle.css" />
     <script
       src="/javaScript/pokedex-modules/getPokemonInfo.js"
       type="module"
       defer
     ></script>
+    <script src="/javaScript/global-modules/burgerMenu.js" defer></script>
     <title>Search Pokemon</title>
   </head>
 
@@ -20,9 +22,12 @@
     </header>
 
     <nav class="navbar">
-      <input type="checkbox" id="open-close" class="open-close">
-      <label for="open-close" class="toggle"></label>
-      <ul class="listLink">
+      <button class="buttonMenu" id="buttonMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="listLink" id="listLink">
         <li class="navbarLink"><a href="/pages/index.html"> Home Page</a></li>
         <hr />
         <li class="navbarLink"><a href="/pages/regions.html"> Regions</a></li>
@@ -33,7 +38,7 @@
       <section>
         <form action="" id="formPokemon" >
           <label for="pokeId">Insert name or number</label>
-          <input class="pokemonInput" id="pokeId" type="text" required re/>
+          <input class="pokemonInput" id="pokeId" type="text" required />
           <button class="searchPokemon"></button>
         </form>
       </section>
@@ -44,7 +49,6 @@
           src="/assets/img/pokeball.jpeg"
           alt="No pokemon image found"
         />
-
         <label for="pokemonName">Name:</label>
         <h3 id="pokemonName"></h3>
         <label for="typeList">Type:</label>

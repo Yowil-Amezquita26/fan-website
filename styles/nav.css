@@ -1,0 +1,72 @@
+.navbar {
+  background-color: rgba(145 145 145);
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.buttonMenu {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+}
+.buttonMenu span {
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+.buttonMenu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.buttonMenu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-9.5px, 5.5px);
+}
+
+.buttonMenu.close span:nth-child(3) {
+  display: none;
+  margin-bottom: 5px;
+}
+.listLink {
+  display: none;
+}
+.listLink.close{
+    display: flex;
+    transition:  0.2s linear;
+}
+.navbarLink {
+  text-decoration: none;
+  padding: 10px;
+  list-style: none;
+}
+
+.navbarLink a {
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+}
+
+/*------------------------Pseudo classes----------------------*/
+
+.navbar ul li:hover {
+  background-color: #4dad5b;
+}
+
