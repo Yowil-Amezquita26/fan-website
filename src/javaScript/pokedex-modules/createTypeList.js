@@ -5,7 +5,8 @@ function createTypeList(list) {
   list.forEach((types) => {
     let img = document.createElement("img");
     const type = document.createElement("li");
-    img.src = `/assets/icons/${types.type.name}.png`;
+    img.src = `../assets/icons/${types.type.name}.png`;
+
     type.appendChild(img);
     type.appendChild(document.createTextNode(types.type.name));
     type.classList.add("typePokemon");
