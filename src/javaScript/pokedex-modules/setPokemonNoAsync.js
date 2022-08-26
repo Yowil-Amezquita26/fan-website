@@ -6,7 +6,7 @@ const setPokemonNoAsync = function (search = "") {
   fetch(`https://pokeapi.co/api/v2/pokemon/${search}`)
     .then((response) => response.json())
     .then((pokemon) => {
-      createTypeList(pokemon.types)
+      createTypeList(pokemon.types);
       document.getElementById("pokemonImg").src = pokemon.sprites.front_default;
       document.getElementById("pokemonName").innerText = pokemon.name;
       storage.setItem("pokemonInfo", JSON.stringify(pokemon.name));

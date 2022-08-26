@@ -1,13 +1,14 @@
 import createTypeList from "./createTypeList.js";
 let storage = window.localStorage;
-const regex = /[/]/;
 /**
  * get image api
  * function that sets the image of the pokemon and saves the data of that pokemon
  * */
 async function setPokemonInfo(search = "") {
   try {
-    let respuesta = await (await fetch(`https://pokeapi.co/api/v2/pokemon/${search}`)).json();
+    let respuesta = await (
+      await fetch(`https://pokeapi.co/api/v2/pokemon/${search}`)
+    ).json();
     await createTypeList(respuesta.types);
     if (search == "25") {
       document.getElementById("pokemonImg").src =

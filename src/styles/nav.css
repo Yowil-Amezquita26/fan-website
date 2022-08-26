@@ -49,9 +49,9 @@
 .listLink {
   display: none;
 }
-.listLink.close{
-    display: flex;
-    transition:  0.2s linear;
+.listLink.close {
+  display: flex;
+  transition: 0.2s linear;
 }
 .navbarLink {
   text-decoration: none;
@@ -69,4 +69,3 @@
 .navbar ul li:hover {
   background-color: #4dad5b;
 }
-

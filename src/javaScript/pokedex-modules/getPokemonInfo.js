@@ -11,8 +11,8 @@ const regex = /[/]/;
  */
 function getPokemonInfo() {
   pokeId = document.getElementById("pokeId").value.toLowerCase();
-  if(regex.test(pokeId) == true){
-    pokeId ="";
+  if (regex.test(pokeId) == true) {
+    pokeId = "";
   }
   if (parseInt(pokeId) > 898) {
     pokeId = "";

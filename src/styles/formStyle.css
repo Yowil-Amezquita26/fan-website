@@ -1,33 +1,32 @@
-
-.formStyle{
-    text-align: center;
-    margin: 2rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-  .formLabel{
-    margin: 2px;
-  }
-  .searchButton {
-    width: 3rem;
-    height: 2.5rem;
-    margin-left: 15px;
-    background-color: #30a7d7;
-    background-image: url("../assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1.5rem;
-    border-radius: 10%;
-  }
-  .searchButton:hover {
-    background-color: #4dad5b;
-  }
+.formStyle {
+  text-align: center;
+  margin: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.formLabel {
+  margin: 2px;
+}
+.searchButton {
+  width: 3rem;
+  height: 2.5rem;
+  margin-left: 15px;
+  background-color: #30a7d7;
+  background-image: url("../assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  border-radius: 10%;
+}
+.searchButton:hover {
+  background-color: #4dad5b;
+}
 
 /*------------------------responsive----------------------*/
 
 @media screen and (max-width: 600px) {
-    .formStyle {
-      flex-direction: column;
-    }
+  .formStyle {
+    flex-direction: column;
   }
+}

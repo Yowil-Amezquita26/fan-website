@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/index-Style.css" />
     <link rel="stylesheet" href="../styles/nav.css" />
-    <link rel="stylesheet" href="../styles/formStyle.css">
+    <link rel="stylesheet" href="../styles/formStyle.css" />
     <link rel="stylesheet" href="../styles/regionStyle.css" />
     <script src="../javaScript/global-modules/burgerMenu.js" defer></script>
     <script
@@ -61,7 +61,9 @@
       </section>
       <section class="regionSection">
         <form action="" id="formRegion" class="formStyle">
-          <label for="regionList" class="formLabel">Select or insert region</label>
+          <label for="regionList" class="formLabel"
+            >Select or insert region</label
+          >
           <input
             type="text"
             class="regionInput"
@@ -81,10 +83,10 @@
           </datalist>
           <button class="searchButton"></button>
         </form>
-        <h2 id="regionName"></h2>
+        <h2 id="regionName" class="regionName"></h2>
         <p id="regionDetail" class="description"></p>
         <h2 id="regionListTitle"></h2>
-        <ul id="gameRegion"></ul>
+        <ul id="gameRegion" class="gameRegion"></ul>
       </section>
     </main>
     <footer class="homeFooter">

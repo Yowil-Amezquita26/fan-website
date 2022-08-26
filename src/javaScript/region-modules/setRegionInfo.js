@@ -8,7 +8,7 @@ const setRegionInfo = async function (region = "", list) {
       storage.getItem("regionSelected");
     document.getElementById("regionDetail").innerHTML = list[region];
     await createGameList(region);
-    document.getElementById("regionListTitle").innerText = "Games"
+    document.getElementById("regionListTitle").innerText = "Games";
   }
 };
 

@@ -8,6 +8,7 @@ function createTypeList(list) {
     img.src = `../assets/icons/${types.type.name}.png`;
 
     type.appendChild(img);
+    type.in;
     type.appendChild(document.createTextNode(types.type.name));
     type.classList.add("typePokemon");
     img.classList.add("typeImage");

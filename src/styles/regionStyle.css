@@ -20,11 +20,11 @@
   align-items: center;
   margin: 40px auto;
 }
-#regionName {
+.regionName {
   margin: 2rem;
 }
 
-#gameRegion {
+.gameRegion {
   margin: 2rem;
   list-style: none;
 }
@@ -39,4 +39,3 @@
   border: 1px solid;
   background-color: #dfdfdf;
 }
-
