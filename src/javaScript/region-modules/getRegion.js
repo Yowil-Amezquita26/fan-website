@@ -1,7 +1,7 @@
 import setRegionInfo from "./setRegionInfo.js";
 import region from "../../helpers/regions.json" assert{type: "json"};
 const storage = window.localStorage;
-const formRegion = document.querySelector("#formRegion");
+const formRegion = document.querySelector(".formStyle");
 
 const getRegion = () => {
   storage.setItem(

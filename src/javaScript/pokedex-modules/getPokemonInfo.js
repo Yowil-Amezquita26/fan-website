@@ -3,7 +3,7 @@ import setPokemonNoAsync from "./setPokemonNoAsync.js";
 
 let storage = window.localStorage;
 let pokeId = "";
-const pokemonForm = document.querySelector("#formPokemon");
+const pokemonForm = document.querySelector(".formStyle");
 const regex = /[/]/;
 
 /**
