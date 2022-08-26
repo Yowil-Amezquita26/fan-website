@@ -24,6 +24,9 @@
   background-size: 1.5rem;
   border-radius: 10%;
 }
+.searchPokemon:hover{
+  background-color: #4DAD5B;
+}
 
 .pokemonDetails {
   display: flex;
