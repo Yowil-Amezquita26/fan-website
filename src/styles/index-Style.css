@@ -41,7 +41,8 @@ header {
 }
 
 .description {
-  margin: 2rem;
+  margin: 1rem;
+  text-align: justify;
 }
 
 .homeImg {
