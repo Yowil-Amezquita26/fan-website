@@ -1,8 +1,11 @@
 import typeColors from "../../helpers/typeColors.json" assert { type: "json" };
 const typelist = document.getElementById("typeList");
-
-function createTypeList(list) {
-  list.forEach((types) => {
+/**
+ *
+ * @param {*} pokemon the types of the pokemon that the user selected
+ */
+function createTypeList(pokemon) {
+  pokemon.forEach((types) => {
     let img = document.createElement("img");
     const type = document.createElement("li");
     img.src = `../assets/icons/${types.type.name}.png`;

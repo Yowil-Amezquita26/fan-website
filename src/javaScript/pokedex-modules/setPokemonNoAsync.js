@@ -2,6 +2,10 @@ import createTypeList from "./createTypeList.js";
 
 let storage = window.localStorage;
 const typelist = document.getElementById("typeList");
+/**
+ *
+ * @param {*} search the pokemon that the user inserted
+ */
 const setPokemonNoAsync = function (search = "") {
   fetch(`https://pokeapi.co/api/v2/pokemon/${search}`)
     .then((response) => response.json())

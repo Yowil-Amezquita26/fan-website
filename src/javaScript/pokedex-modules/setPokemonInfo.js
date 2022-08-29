@@ -1,9 +1,9 @@
 import createTypeList from "./createTypeList.js";
 let storage = window.localStorage;
 /**
- * get image api
- * function that sets the image of the pokemon and saves the data of that pokemon
- * */
+ *
+ * @param {*} search the pokemon that the user inserted
+ */
 async function setPokemonInfo(search = "") {
   try {
     let respuesta = await (
