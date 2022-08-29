@@ -11,8 +11,17 @@ const setPokemonNoAsync = function (search = "") {
     .then((response) => response.json())
     .then((pokemon) => {
       createTypeList(pokemon.types);
-      document.getElementById("pokemonImg").src = pokemon.sprites.front_default;
-      document.getElementById("pokemonName").innerText = pokemon.name;
+      if (search == "25") {
+        document.getElementById("pokemonImg").src =
+          pokemon.sprites.other.dream_world.front_default;
+        document.getElementById(
+          "pokemonName"
+        ).innerText = `${pokemon.name} (Ash's best friend)`;
+      } else {
+        document.getElementById("pokemonImg").src =
+          pokemon.sprites.front_default;
+        document.getElementById("pokemonName").innerText = pokemon.name;
+      }
       storage.setItem("pokemonInfo", JSON.stringify(pokemon.name));
     })
     .catch(() => {
