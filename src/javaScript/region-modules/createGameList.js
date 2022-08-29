@@ -6,7 +6,6 @@ const gameList = document.getElementById("gameRegion");
  * @param {*} list a json with the information (description, games) of the region selected
  */
 const createGameList = async function (region, list) {
-  console.log(region, list);
   list.forEach((game) => {
     const gameLi = document.createElement("li");
     gameLi.appendChild(document.createTextNode(`Pokemon ${game}`));
