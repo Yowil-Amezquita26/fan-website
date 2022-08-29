@@ -1,5 +1,4 @@
 .regionInformation {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,12 +12,11 @@
 }
 
 .regionSection {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 35px;
 }
 .regionName {
   margin: 2rem;
