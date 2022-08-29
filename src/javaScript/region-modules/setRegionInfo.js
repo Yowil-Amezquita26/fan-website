@@ -6,8 +6,9 @@ const setRegionInfo = async function (region = "", list) {
   if (list[region] != undefined) {
     document.getElementById("regionName").innerHTML =
       storage.getItem("regionSelected");
-    document.getElementById("regionDetail").innerHTML = list[region];
-    await createGameList(region);
+    document.getElementById("regionDetail").innerHTML =
+      list[region].description;
+    await createGameList(region, list[region].games);
     document.getElementById("regionListTitle").innerText = "Games";
   }
 };
